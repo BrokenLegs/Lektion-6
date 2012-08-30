@@ -1,0 +1,67 @@
+<!-- HTML User Details: -->
+
+@model Lab2.Models.Entities.User
+<div class="capclear2 aw post">
+    <img src="@Url.Content("~/Content/Images/avatar.png")" alt="Alt" />
+    <ul>
+        <li>
+            <span>UserName:</span>
+        </li>
+        <li>
+            <span>FirstName:</span>
+        </li>
+        <li>
+            <span>LastName:</span>
+        </li>
+        <li>
+            <span>Type:</span>
+        </li>
+    </ul>
+</div>
+
+
+<!-- CSS: -->
+
+/* Tillagda styles
+-------------------------------------------*/
+
+div .post
+{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #5c87b2;
+    box-shadow: 7px 7px 5px #888888;
+}
+
+/* Styles from http://pmob.co.uk/pob/caption-clear.htm */
+
+.capclear2{
+    margin:10px auto;
+    width:38em;
+    text-align:left;
+    border:1px solid #000;
+    background:#e8eef4;
+    padding:1px;
+}
+.capclear2 img {float:left;margin:5px;display:inline;}
+.capclear2 span {
+    font-size:120%;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.capclear2 ul li{margin:1em 0}
+
+.capclear2 ul{
+    overflow:auto;/* this is the key for good browsers*/
+}
+
+/* mac hide - this is for ie6 and less \*/
+* html .capclear2 ul {height:1%}
+/* end hide*/
+
+.aw {width:45em;}
